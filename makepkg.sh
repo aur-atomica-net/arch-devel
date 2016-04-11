@@ -4,6 +4,7 @@ set -x
 set -o pipefail
 
 REPO=$1
+GNUPGHOME=$(pwd)/.gnupg
 
 makepkg --force --noconfirm --syncdeps --install --nocheck --sign --key ${GPGKEY}
 
