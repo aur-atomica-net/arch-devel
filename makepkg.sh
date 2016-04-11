@@ -6,7 +6,7 @@ set -o pipefail
 REPO=$1
 GNUPGHOME=$(pwd)/.gnupg
 
-gpg-agent
+eval $(gpg-agent --daemon)
 
 makepkg --force --noconfirm --syncdeps --install --nocheck --sign
 
