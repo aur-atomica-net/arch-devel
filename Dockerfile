@@ -1,4 +1,4 @@
-FROM atomica/arch-base:latest
+FROM docker.artfire.me/atomica/arch-base:latest
 
 COPY arch-devel.sh /arch-devel.sh
 
